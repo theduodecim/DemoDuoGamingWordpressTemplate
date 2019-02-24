@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="<?php bloginfo('charset');?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Demo DuoGaming Template
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bbpress.css" />
+    <link rel="stylesheet" href="/css/buddypress.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="jumbotron text-center header" style="margin-bottom:0">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <br>
+                <a href="/" class="d-flex justify-content-center logo">
+                    <img src="/img/Esportlogo.png" />
+                </a>
+                <p>Resize this responsive page to see the effect!</p>
+            </div>
+            <div class="col">
+                <ul class="breadcrumb float-right">
+                    <li class="breadcrumb-item">
+                        <a href="#"> <i class="fab fa-twitter-square"></i>Twitter</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#"> <i class="fab fa-discord"></i>Discord</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
+                    </li>
+                    <li class="breadcrumb-item active">Add +</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="subHeaderMobileRow" class="row ">
+        <div class="col" style="padding-left: 0 !important; padding-right: 0 !important;">
+        </div>
+        <div id="subHeader" class="col-8">
+            <div id="subHeaderParent" class="box ">
+
+            </div>
+        </div>
+        <div class="col" style="padding-left: 0 !important; padding-right: 0 !important;">
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg  bg-ligth navbar-light ">
+        <a class="navbar-brand justify-content-center" href="/">
+            <h2 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                <img id="navLogo" src="/img/navLogo.png" /> TeamName
+            </h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navItems" id="collapsibleNavbar">
+            <ul class="navbar-nav border-bottom border-primary ">
+                <li class="nav-item ">
+                    <div class="dropdown">
+                        <button class="btn nav-link text-dark dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <h4 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                                TOURNAMENTS
+                            </h4>
+                        </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style="max-width: 100%;">
+                            <a onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';" class="dropdown-item "
+                                href="tournaments.html"> Live
+                                Tournaments</a>
+                            <a style="padding-left: 5px !important;" class="dropdown-item" href="tournamentsEvents.html">
+                                Comming Tournaments</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="demo2.html">
+                        <h4 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                            FORUMS
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="demo3.html">
+                        <h4 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                            STREAMS
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="demo.html">
+                        <h4 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                            GALLERY
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="demo.html">
+                        <h4 onmouseover="this.style.color = '#99bbff';" onmouseout="this.style.color='';">
+                            POST
+                        </h4>
+                    </a>
+                </li>
+                <li id="btnWraperModalMobile" class="nav-item">
+                    <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#exampleModal3">
+                        <i style="color: #6441A5" class="fas fa-gamepad"></i>
+                        <i class="fas fa-user text-primary"></i>
+                        <i class="fas fa-users text-primary"></i>
+                        <i style="color: #6441A5" class="fas fa-trophy"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-sm-7 border-0">
+            <iframe src="http://challonge.com/687vwo2/module?theme=6814" width="100%" height="500" frameborder="0"
+                scrolling="auto" allowtransparency="true"></iframe></div>
+        <div class="col">
+            <div class="card text-center border-0 rounded">
+                <div class="card-header">The Tournament</div>
+                <div class="card-body border-0 rounded">
+                    <h5 class="card-title text-left border-bottom  border-primary ">
+                        Tournament Name</h5>
+                    <p class="card-text text-justify">
+                        <span class="border-bottom">GAME TOURNAMENT Rules </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus reprehenderit, et
+                        sequi in veniam! Reiciendis voluptas amet laboriosam minima ipsa molestias laudantium veritatis
+                        recusandae illum facere! Quidem animi quia iure cumque nihil velit omnis maxime a ab officia
+                        laborum, iusto unde vel veniam voluptatem atque? Libero nihil eos autem?
+                    </p>
+                    <p class="card-text text-justify">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ipsum.
+                        <ul>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, animi!</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, est.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, recusandae?</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-footer text-muted">2 days ago</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <!-- FOOTER   -->
+        <br>
+        <br>
+        <br>
+
+        <div class="jumbotron text-center footer" style="margin-bottom:0;">
+
+
+            <div id="subFooterMobileRow" class="row">
+                <div class="col-2 ">
+                </div>
+                <div id="subFooter" class="col-8 footer">
+                    <div id="subFooterParent" class="box footer">
+
+                    </div>
+                </div>
+                <div class="col-2 ">
+                </div>
+            </div>
+
+
+            <!--
+            <div class="row">
+                <div class="container">
+                    <h2>Pill Badges</h2>
+                    <span class="badge badge-pill badge-primary">Primary</span>
+                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-success">Success</span>
+                    <span class="badge badge-pill badge-danger">Danger</span>
+                    <span class="badge badge-pill badge-warning">Warning</span>
+                    <span class="badge badge-pill badge-info">Info</span>
+                    <span class="badge badge-pill badge-light">Light</span>
+                    <span class="badge badge-pill badge-dark">Dark</span>
+                </div>
+            </div>
+            <br>
+        -->
+            <!-- Six equal columns -->
+            <div class="row itemFooterRow justify-content-center">
+
+
+                <div class="col-md-3">
+                    <div class="col footerItems">
+                        <li class="list-group-item  d-flex justify-content-center  border-left border-primary">
+                            <h5>Games</h5>
+                        </li>
+
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0  border-bottom-0 border-top-0 ">
+                                        Starcraft
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Cs Go
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Unreal Tournament
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        League of Legends
+                                    </li>
+                                </div>
+                                <div class="carousel-item">
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Danger item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Primary item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Dark item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Light item
+                                    </li>
+                                </div>
+                                <div class="carousel-item">
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Danger item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Primary item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Dark item
+                                    </li>
+                                    <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                                        Light item
+                                    </li>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <i onmouseover="this.style.color='black';" onmouseout="this.style.color='';" class="fas fa-arrow-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <i style="color: black;" class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col footerItems">
+                        <img src="/img/Intel_Inside_Logo.png" class="rounded" alt="Cinque Terre" id="footerBrand1" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col footerItems">
+                        <li class="list-group-item  d-flex justify-content-center border-left border-primary">
+                            <h5>Contact</h5>
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            admin@email.com
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            admin@email.com
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            moderator@email.com
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            support@email.com
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-end border-right-0 border-top-0 border-bottom-0 ">
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+
+
+                    </div>
+                    <br />
+                    <div class="col footerItems">
+                        <li class="list-group-item d-flex justify-content-center border-left border-primary">
+                            <h5>Social</h5>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            <a href="#"> <i class="fab fa-discord"></i> Discord</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            <a href="#"> <i class="fab fa-twitter-square"></i> Twitter</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            <span class="text-primary">Add +</span>
+                        </li>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="col footerItems">
+                        <li class="list-group-item  d-flex justify-content-center  footerItems border-left border-primary">
+                            <h5>About Us</h5>
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-start border-right-0 border-top-0 border-bottom-0 ">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio a perferendis distinctio
+                                dolorem non. Totam quos est, autem magni culpa esse, eius deleniti dolores quo vel sed
+                                reprehenderit cupiditate hic!</p>
+                        </li>
+                        <li class="list-group-item  d-flex justify-content-end border-right-0 border-top-0 border-bottom-0 ">
+                            <a href="about.html">More</a>
+                        </li>
+                    </div>
+                    <br />
+                    <div class="col footerItems">
+                        <img src="/img/Corsairlogo_new.png" class="rounded" alt="Cinque Terre" id="footerBrand2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <br>
+    <p class="text-right">Copyright © 2019 DuoGamingTemplate All rights reserved.</p>
+    <hr>
+</body>
+
+</html>

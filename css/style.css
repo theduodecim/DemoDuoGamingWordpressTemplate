@@ -1,0 +1,585 @@
+/*
+Theme Name: DuoGamingTemplate 
+Author: DuodecimTemplates
+Description: A Gaming Template
+Version: 1.0
+*/
+
+/*
+no scroll bar x
+*/
+
+@font-face {
+  font-family: 'FiraSans-Light';
+  src: URL('fonts/FiraSans-Light.ttf') format('truetype');
+}
+
+
+
+body {
+  overflow-x: hidden !important;
+  font-family: 'FiraSans-Light';
+}
+
+/* Background */
+#background {
+  background-image: linear-gradient(to right,
+    #ffffff,
+    #d8d8d8,
+    #b3b3b3,
+    #8f8f8f,
+    #6d6d6d) !important;
+}
+
+/*Wordpress Settings */
+.head-title {
+  display: none !important;
+}
+
+/* Header */
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "" !important;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 30rem;
+  min-width: 10rem;
+}
+
+.navLogo {
+  width: 2.5rem;
+  min-width: 0.1rem;
+}
+
+.navItems {
+  padding-top: 7em;
+}
+
+/*SubHeader Shapes*/
+
+#subHeader {
+  position: relative !important;
+  bottom: 2px;
+  width: 100% !important;
+  height: 100px !important;
+  background: #e9ecef !important;
+
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+}
+
+/* Footer */
+
+.brandImgFooter {
+  height: 20rem !important;
+  width: 20rem !important;
+}
+
+/*SubFooter Shapes*/
+
+#subFooter {
+  display: inline-block;
+  position: relative !important;
+  bottom: 65px;
+  width: 100% !important;
+  height: 100px !important;
+  background: white !important;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+}
+
+/*About Page */
+#aboutBrands li {
+  display: inline-block !important;
+  list-style: none !important;
+  list-style-type: none;
+}
+
+.brandsImgs {
+  max-width: 10em !important;
+  max-height: 10em !important;
+  min-width: 3em !important;
+  min-height: 3em !important;
+}
+
+/* MAIN */
+
+.main {
+  background: linear-gradient(to right,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(209, 209, 209, 1) 0%,
+    rgba(209, 209, 209, 1) 4%,
+    rgba(209, 209, 209, 1) 9%,
+    rgba(219, 219, 219, 1) 14%,
+    rgba(209, 209, 209, 1) 29%,
+    rgba(209, 209, 209, 1) 29%,
+    rgba(209, 209, 209, 1) 40%,
+    rgba(228, 228, 228, 1) 52%,
+    rgba(230, 230, 230, 1) 53%,
+    rgba(254, 254, 254, 1) 68%,
+    rgba(240, 240, 240, 1) 76%,
+    rgba(211, 211, 211, 1) 92%,
+    rgba(209, 209, 209, 1) 93%);
+}
+
+#subHeaderModal {
+  position: relative !important;
+  font-family: "Times New Roman", Times, serif;
+  background-color: lightgrey !important;
+  bottom: 16px;
+  left: 5px;
+  width: 100% !important;
+  height: 100px !important;
+  -webkit-clip-path: polygon(0 0, 100% 0, 93% 63%, 6% 63%);
+  clip-path: polygon(0 0, 100% 0, 93% 63%, 6% 63%);
+}
+
+.headerModalColor {
+  background-color: whitesmoke !important;
+}
+
+/* NavBar Modal Wraper Left */
+.btn {
+  margin-bottom: 15px;
+}
+
+#btnWraperModal {
+  min-height: 20em !important;
+  max-width: 4em !important;
+  color: rgba(60, 115, 197, 0.685);
+  background-color: #e9ecef;
+}
+
+#btnWraperModalMobile {
+  visibility: hidden;
+}
+
+/* message-thread */
+
+#message-thread {
+  padding-left: 20px;
+}
+
+.message-content p {
+  background-color: white !important;
+}
+
+.player-overlay .pl-overlay__fullscreen {
+  background-color: red !important;
+  width: 100px;
+  height: 130px;
+}
+
+/* 
+
+ -webkit-clip-path: polygon(48% 0, 96% 53%, 53% 100%, 0% 100%, 21% 51%, 0% 0%);
+  clip-path: polygon(48% 0, 96% 53%, 53% 100%, 0% 100%, 21% 51%, 0% 0%);
+
+*/
+/*Required*/
+@media (max-width: 576px) {
+
+
+
+
+  .modal-dialog.modal-dialog-slideout {
+    width: 80%;
+  }
+
+  /*player-overlay pl-overlay__fullscreen*/
+
+  /*About Page */
+  #sliderMobile {
+    display: none !important;
+  }
+}
+
+.modal-dialog-slideout {
+  position: relative;
+  top: 45%;
+  min-height: 65%;
+  min-height: 400px;
+  margin: 0 auto 0 0;
+  background: #fff;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  flex-flow: column;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+/* BBPress Forms */
+
+.bbp-forum-title {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1.5em !important;
+}
+
+.subscription-toggle {
+  padding-left: 10px !important;
+}
+
+/* Buddy Press */
+/* Members */
+.memberNameTitle {
+  color: #555;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+#navmember li {
+  list-style-type: none;
+  float: left;
+  padding-left: 15px;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-family: "Raleway", sans-serif;
+  transition: background-color 1.5s ease;
+}
+
+#navmember li a {
+  padding: 0 60px 0 5px;
+  background: #0089e0;
+  color: #fff;
+  text-decoration: none;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#navmember li a:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  float: left;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #fff;
+  -moz-box-shadow: -1px -1px 2px #004977;
+  -webkit-box-shadow: -1px -1px 2px #004977;
+  box-shadow: -1px -1px 2px #004977;
+}
+
+#navmember li a:hover {
+  background: #555;
+}
+
+#navmember li a:hover:before {
+  border-color: transparent #0089e0 transparent transparent;
+}
+
+#profile-group-edit-submit {
+  background-color: #0089e0;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+/* Groups */
+
+#home-groups-li {
+  padding-left: 30px;
+}
+
+#activity-groups-li {
+  padding-left: 30px;
+}
+
+#nav-forum-groups-li {
+  padding-left: 30px;
+}
+
+#members-groups-li {
+  padding-left: 30px;
+}
+
+#invite-groups-li {
+  padding-left: 30px;
+}
+
+#admin-groups-li {
+  padding-left: 30px;
+}
+
+.removesuggestion-group {
+  display: none !important;
+}
+
+#group-admins li {
+  display: inline;
+}
+
+#group-mods li {
+  display: inline;
+}
+
+/* TournamentsBrackets */
+.tribe-list-widget {
+  padding-left: 0;
+}
+
+#wp-calendar {
+  background-color: whitesmoke !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1150px) {
+
+  /* Foooter */
+  #footerBrand1 {
+    max-width: 5rem;
+  }
+
+  #footerBrand2 {
+    max-width: 6rem;
+  }
+
+  .brandImgFooter {
+    height: 15rem !important;
+    width: 25rem !important;
+  }
+
+
+
+  /* Home */
+  #twitchChat {
+    visibility: hidden !important;
+  }
+
+  .modal-dialog-slideout {
+    position: relative;
+    top: 25%;
+    min-height: 65%;
+    min-height: 400px;
+    margin: 0 auto 0 0;
+    background: #fff;
+  }
+
+  /*twitchPanel */
+
+  #twitchPanel {
+    min-width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  /*SubHeaderMobile */
+  #subHeaderMobileRow {
+    display: none !important;
+  }
+
+  /*Footer */
+  .brandImgFooter {
+    height: 13rem !important;
+    width: 25rem !important;
+  }
+
+  /*SubFooterMobile */
+  #subFooterMobileRow {
+    display: none !important;
+  }
+
+  #modalButtonCol {
+    display: none !important;
+  }
+
+  #btnWraperModal {
+    display: none !important;
+  }
+
+  #btnWraperModalMobile {
+    visibility: visible !important;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+
+  /* Header */
+  #navLogo {
+    max-width: 1rem;
+  }
+
+  /* Home BtnWraper*/
+
+  #btnWraperModal {
+    display: none !important;
+  }
+
+  #btnWraperModalMobile {
+    visibility: visible !important;
+  }
+
+  /* Wraper Modal  Content*/
+  .imgModal {
+    width: 3em;
+    height: 3em;
+  }
+
+  /*SubHeaderMobile */
+  #subHeaderMobileRow {
+    display: none !important;
+  }
+
+  /* Footer */
+  .brandImgFooter {
+    height: 11rem !important;
+    width: 25rem !important;
+  }
+
+  /*SubFooterMobile */
+  #subFooterMobileRow {
+    display: none !important;
+  }
+
+  /* Foooter */
+  #footerBrand1 {
+    max-width: 5rem;
+  }
+
+  #footerBrand2 {
+    max-width: 6rem;
+  }
+
+  .youtubeVideos iframe {
+    max-width: 100% !important;
+  }
+
+  #twitchStream iframe {
+    max-width: 100% !important;
+    list-style: none;
+  }
+
+  #twitchStream iframe #Stream ul li {
+    max-width: 100% !important;
+    list-style: none;
+  }
+}
+
+/* Change Colors add the !important at the end
+https://mycolor.space/gradient?ori=to+left+top&hex=%23F02D2D&hex2=%23000000&sub=1
+https://www.cssmatic.com/
+https://uigradients.com/#Superman
+https://mycolor.space/gradient?ori=to+left+top&hex=%23F02D2D&hex2=%23000000&sub=1
+https://www.cssmatic.com/
+https://leaverou.github.io/css3patterns/
+https://www.heropatterns.com/
+
+SuperMan COlor
+ background: #0099f7 !important;
+  background: -webkit-linear-gradient(to right, #0099f7, #f11712) !important;
+  background: linear-gradient(to right, #0099f7, #f11712) !important;
+
+
+
+*/
+
+/*
+Headers Colors 
+******************************************************************************************************************************
+*/
+
+.header {}
+
+#subHeader {}
+
+.breadcrumb {}
+
+/*
+NAV BAR 
+******************************************************************************************************************************
+*/
+.navbar-brand {}
+
+#collapsibleNavbar {}
+
+#dropdownMenuButton {}
+
+.dropdown-menu a {}
+
+.nav-link h4 {}
+
+/* Pages & Post Colors 
+******************************************************************************************************************************
+*/
+#colorPages {}
+
+#colorPages .jumbotron {}
+
+#colorPages .container {}
+
+.customize-support {}
+
+#colorPost {}
+
+.entry div {}
+
+.card-header {}
+
+.card-footer {}
+
+/*
+Forum Colors
+******************************************************************************************************************************
+*/
+.bbp-header {}
+
+.bbp-forum-title {}
+
+.bNg8Rb {}
+
+.bbp-reply-content {}
+
+.bbp-reply-header {}
+
+.bbp-forums ul {}
+
+.bbp-footer {}
+
+/*
+Footer Colors
+******************************************************************************************************************************
+*/
+
+.footer {}
+
+#subFooter {}
+
+/* 
+Front Page NewsModal Colors
+******************************************************************************************************************************
+*/
+
+.headerModalColor {}
+
+#subHeaderModal {}
+
+.modal-body {}
+
+/******************************************************************************************************************************* */

@@ -348,6 +348,11 @@ body {
   background-color: whitesmoke !important;
 }
 
+.demoLiveTournamentImg {
+  position: relative;
+  left: 8em;
+}
+
 /* Mobile */
 @media only screen and (max-width: 1150px) {
 
@@ -386,6 +391,11 @@ body {
   #twitchPanel {
     min-width: 50% !important;
   }
+
+  .demoLiveTournamentImg {
+    position: relative;
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -416,6 +426,11 @@ body {
 
   #btnWraperModalMobile {
     visibility: visible !important;
+  }
+
+  .demoLiveTournamentImg {
+    position: relative;
+    width: 60%;
   }
 }
 
@@ -480,6 +495,12 @@ body {
     max-width: 100% !important;
     list-style: none;
   }
+
+  .demoLiveTournamentImg {
+    position: relative;
+    width: 60%;
+  }
+
 }
 
 /* Change Colors add the !important at the end
